@@ -12,13 +12,15 @@ import {MatInputModule} from '@angular/material/input';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'; // 
 import {MatButtonModule} from '@angular/material/button'; // button
 import {MatCardModule} from '@angular/material/card'; //fenetre
-import {MatCheckboxModule} from '@angular/material/checkbox'; //checkbox remember me
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent
+  
   ],
   imports: [
     BrowserModule,
