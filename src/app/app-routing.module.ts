@@ -5,8 +5,13 @@ import { LoginComponent } from './login/login.component';
 
 
 
-const routes: Routes = [{ path: 'home', component: HomeComponent },
-{path: 'login', component: LoginComponent}];
+const routes: Routes = [
+{ path: 'home', component: HomeComponent },
+{path: 'login', component: LoginComponent},
+{path :'**' , redirectTo: '/login'},
+];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
