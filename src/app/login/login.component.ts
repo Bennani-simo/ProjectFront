@@ -66,7 +66,9 @@ export class LoginComponent implements OnInit {
 
   login = 'Bret';
   logged = false;
+  error = false;
   loading = false;
+ 
 
   constructor(private http: HttpClient) {
   }
