@@ -66,10 +66,10 @@ it( 'connexion done', () => {
   component.connexion();
 
   // att toi a avoir une requette Get par default sur telle url
-  //const req = httpTestingController.expectOne( url'https://jsonplaceholder.typicode.com/users?username=')
+  const req = httpTestingController.expectOne( 'https://jsonplaceholder.typicode.com/users?username=' + component.login)
 
   //repond a la requete avec telle reponse
-  //req.flush([{}]);
+  req.flush([{}]);
 
   // verification que toutes les requetes sont traitees
   httpTestingController.verify();
