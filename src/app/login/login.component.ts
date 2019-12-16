@@ -82,7 +82,7 @@ export class LoginComponent implements OnInit {
     this.http.get('https://jsonplaceholder.typicode.com/users?username=' + this.login)
       .subscribe((value: IUser[]) => {
         // traitement OK
-        console.log(value[0].company.name)
+        // console.log(value[0].company.name)
         if (value.length === 1) {
           this.logged = true;
         }

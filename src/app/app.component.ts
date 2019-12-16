@@ -6,7 +6,7 @@
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Projet';
+  title = 'ProjetFront';
   cursorbool = true
 } 
 

@@ -1,12 +1,18 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 describe('AppComponent', () => {
+
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        
+
       ],
       declarations: [
         AppComponent
@@ -32,4 +38,16 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain('ProjetFront app is running!');
   });
+
+ /* it( expectation: 'Connexion should be ok'), assertion:() => { //
+    const userName = 'Bret';
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+
+  }// */
+
+
+
+
+
 }); 
